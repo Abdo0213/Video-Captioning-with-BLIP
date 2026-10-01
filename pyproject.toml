@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vidcap"
+version = "0.1.0"
+description = "Video Captioning with BLIP and Ollama Cloud"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.2",
+    "torchvision>=0.17",
+    "transformers>=4.44",
+    "accelerate>=0.33",
+    "pillow>=10.0",
+    "numpy>=1.26",
+    "opencv-python-headless>=4.9",
+    "imageio-ffmpeg>=0.5",
+    "scenedetect[opencv]>=0.6.4",
+    "srt>=3.5",
+    "ollama>=0.3",
+    "rapidfuzz>=3.9",
+    "python-dotenv>=1.0",
+    "tqdm>=4.66",
+    "gradio>=4.40"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

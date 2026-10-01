@@ -1,0 +1,31 @@
+# Captioning model (BLIP, local via Hugging Face)
+torch>=2.2
+torchvision>=0.17
+transformers>=4.44
+accelerate>=0.33
+pillow>=10.0
+numpy>=1.26
+
+# Video I/O
+opencv-python-headless>=4.9
+imageio-ffmpeg>=0.5          # bundled ffmpeg binary (used for audio mux + subtitle burn-in)
+scenedetect[opencv]>=0.6.4   # shot/scene boundary detection
+srt>=3.5
+
+# LLM merge/refine step (Ollama Cloud)
+ollama>=0.3
+
+# Utils
+rapidfuzz>=3.9               # caption de-duplication
+python-dotenv>=1.0
+tqdm>=4.66
+
+# UI
+gradio>=4.40
+
+# Optional: only if you want Arabic captions burned in via Pillow fallback
+# arabic-reshaper>=3.0
+# python-bidi>=0.5
+
+# Dev
+pytest>=8.0
